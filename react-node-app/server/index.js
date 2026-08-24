@@ -21,3 +21,12 @@ app.get('/api/data', (req, res) => {
   });
 });
 
+app.get('/api/get', (req, res) => {
+  res.json({ message: 'This is a GET request!' });
+});
+
+app.post('/api/post', (req, res) => {
+  res.json({ message: 'This is a POST request!' });
+});
+
+
