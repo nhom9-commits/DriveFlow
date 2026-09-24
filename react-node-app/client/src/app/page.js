@@ -38,18 +38,18 @@ export default function Home() {
               DriveFlow
             </h1>
             <p className="text-sm text-slate-300 mt-1">
-              Next.js Frontend & Express Backend Integration
+              Next.js Frontend & NestJS TypeORM Backend (BTL Nhóm 9)
             </p>
           </div>
           <span className="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-            Next.js App Router
+            NestJS + TypeORM
           </span>
         </div>
 
         <div className="bg-black/30 rounded-xl p-5 border border-white/10 space-y-3">
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium text-slate-300">
-              Trạng thái kết nối Express Server (Port 5000 via rewrite):
+              Trạng thái kết nối NestJS Server (Port 5000):
             </span>
             {loading ? (
               <span className="inline-flex items-center gap-1.5 text-xs text-amber-400">
@@ -71,18 +71,29 @@ export default function Home() {
 
           {error && (
             <div className="text-xs text-rose-300 bg-rose-500/10 p-3 rounded-lg border border-rose-500/20">
-              <p className="font-semibold mb-1">Gợi ý:</p>
-              <p>Hãy chạy server Express trong thư mục <code>react-node-app/server</code> bằng lệnh:</p>
-              <pre className="mt-1 bg-black/40 p-2 rounded text-rose-200">npm install && npm start</pre>
+              <p className="font-semibold mb-1">Gợi ý khởi động NestJS Backend:</p>
+              <p>Mở terminal trong thư mục <code>react-node-app/server</code> và chạy:</p>
+              <pre className="mt-1 bg-black/40 p-2 rounded text-rose-200">npm run build && npm start</pre>
             </div>
           )}
 
           {data && (
-            <div className="mt-3">
-              <p className="text-xs text-slate-400 mb-1 font-mono">Dữ liệu nhận từ endpoint <code>/api/data</code>:</p>
-              <pre className="bg-black/60 p-4 rounded-lg text-emerald-300 text-xs overflow-x-auto border border-white/5 font-mono">
-                {JSON.stringify(data, null, 2)}
-              </pre>
+            <div className="mt-3 space-y-3">
+              <div>
+                <p className="text-xs text-slate-400 mb-1 font-mono">Dữ liệu nhận từ endpoint <code>/api/data</code>:</p>
+                <pre className="bg-black/60 p-4 rounded-lg text-emerald-300 text-xs overflow-x-auto border border-white/5 font-mono">
+                  {JSON.stringify(data, null, 2)}
+                </pre>
+              </div>
+
+              <div className="bg-white/5 p-3 rounded-lg border border-white/10 text-xs space-y-1">
+                <p className="font-semibold text-teal-300">Các API Endpoints vừa được khởi tạo:</p>
+                <ul className="list-disc list-inside text-slate-300 space-y-0.5">
+                  <li><code className="text-blue-300">/api/vehicles</code>: Quản lý danh sách, chi tiết, thêm, sửa, xóa xe</li>
+                  <li><code className="text-blue-300">/api/customers</code>: Quản lý thông tin khách hàng</li>
+                  <li><code className="text-blue-300">/api/bookings</code>: Quản lý đơn đặt và hợp đồng thuê xe</li>
+                </ul>
+              </div>
             </div>
           )}
         </div>
