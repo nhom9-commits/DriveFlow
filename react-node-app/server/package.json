@@ -4,17 +4,33 @@
   "description": "Express server for react-node-app exercise",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "build": "tsc",
+    "start": "node dist/src/main.js",
+    "start:dev": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:legacy": "node index.js",
+    "dev:legacy": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nestjs/common": "^12.1.0",
+    "@nestjs/core": "^12.1.0",
+    "@nestjs/platform-express": "^12.1.0",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "dotenv": "^18.0.3",
+    "express": "^4.19.2",
+    "mysql2": "^3.24.4",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "typeorm": "^1.1.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^7.0.2"
   }
 }
