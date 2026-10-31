@@ -260,17 +260,6 @@ webnc/
 
 ---
 
-## 8. Hướng dẫn Dành cho Sinh viên Hoàn thiện Nộp bài
-
-Trước khi xuất file PDF và nộp bài lên hệ thống Canvas hoặc in bản cứng, các thành viên trong nhóm cần thực hiện các bước sau:
-1. Tìm kiếm toàn bộ cụm từ khóa **`[CẦN BỔ SUNG`** trong thư mục `docs/` và file `README.md`.
-2. Điền chính xác:
-   - Họ và tên, Mã sinh viên, Lớp, Email của từng thành viên nhóm (tại `docs/report.md`, `docs/contributions.md`).
-   - Đường link Git repository chính thức của nhóm (GitHub/GitLab).
-   - Đường link video demo sản phẩm (Google Drive/YouTube/OneDrive với quyền xem công khai, thời lượng `< 8 phút`).
-   - Ngày tháng tổ chức các buổi họp thực tế và chữ ký xác nhận của từng thành viên trong `docs/contributions.md`.
-3. Kiểm tra danh mục kiểm tra tại **`docs/submission-checklist.md`** để đảm bảo không bỏ sót bất kỳ yêu cầu nào của giảng viên.
-
 ---
 *Dự án được xây dựng và hoàn thiện đáp ứng toàn diện các tiêu chuẩn kỹ thuật phần mềm doanh nghiệp, chuẩn mực kiến trúc và quy định học thuật của Môn học Phát triển Ứng dụng Web Nâng cao.*
 
