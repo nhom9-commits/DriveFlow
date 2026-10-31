@@ -83,12 +83,6 @@ export const LoginPage: React.FC = () => {
                 {loading ? <Spinner animation="border" size="sm" /> : 'Đăng nhập'}
               </Button>
 
-              <div className="p-2 bg-light rounded text-center small text-muted mb-3">
-                <span className="fw-bold d-block mb-1">Tài khoản demo thử nghiệm:</span>
-                Admin: <code>admin@cosrent.com</code> / <code>Admin123@</code><br />
-                Khách: <code>customer@cosrent.com</code> / <code>Customer123@</code>
-              </div>
-
               <div className="text-center small text-muted">
                 Chưa có tài khoản?{' '}
                 <Link to="/register" className="text-primary fw-semibold">

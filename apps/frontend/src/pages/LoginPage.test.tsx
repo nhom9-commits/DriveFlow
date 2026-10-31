@@ -17,7 +17,6 @@ describe('LoginPage Component', () => {
     expect(screen.getByLabelText(/Địa chỉ Email/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Mật khẩu/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Đăng nhập/i })).toBeInTheDocument();
-    expect(screen.getByText(/Tài khoản demo thử nghiệm/i)).toBeInTheDocument();
   });
 });
 
